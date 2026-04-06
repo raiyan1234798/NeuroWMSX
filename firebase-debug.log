@@ -1,0 +1,31 @@
+[debug] [2026-03-23T16:58:52.491Z] ----------------------------------------------------------------------
+[debug] [2026-03-23T16:58:52.493Z] Command:       /opt/homebrew/Cellar/node/25.3.0/bin/node /opt/homebrew/bin/firebase deploy --project neurowmsx-76a8b
+[debug] [2026-03-23T16:58:52.493Z] CLI Version:   15.5.1
+[debug] [2026-03-23T16:58:52.493Z] Platform:      darwin
+[debug] [2026-03-23T16:58:52.493Z] Node Version:  v25.3.0
+[debug] [2026-03-23T16:58:52.493Z] Time:          Mon Mar 23 2026 22:28:52 GMT+0530 (India Standard Time)
+[debug] [2026-03-23T16:58:52.493Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-03-23T16:58:53.363Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-03-23T16:58:53.363Z] > authorizing via signed-in user (abubackerraiyan@gmail.com)
+[debug] [2026-03-23T16:58:53.363Z] [iam] checking project neurowmsx-76a8b for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2026-03-23T16:58:53.364Z] Checked if tokens are valid: true, expires at: 1774288674858
+[debug] [2026-03-23T16:58:53.364Z] Checked if tokens are valid: true, expires at: 1774288674858
+[debug] [2026-03-23T16:58:53.365Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/neurowmsx-76a8b:testIamPermissions [none]
+[debug] [2026-03-23T16:58:53.365Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/neurowmsx-76a8b:testIamPermissions  x-goog-user-project=neurowmsx-76a8b
+[debug] [2026-03-23T16:58:53.365Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/neurowmsx-76a8b:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2026-03-23T16:58:55.401Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/neurowmsx-76a8b:testIamPermissions 403
+[debug] [2026-03-23T16:58:55.401Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/neurowmsx-76a8b:testIamPermissions {"error":{"code":403,"message":"Caller does not have required permission to use project neurowmsx-76a8b. Grant the caller the roles/serviceusage.serviceUsageConsumer role, or a custom role with the serviceusage.services.use permission, by visiting https://console.developers.google.com/iam-admin/iam?project=neurowmsx-76a8b and then retry. Propagation of the new permission may take a few minutes.","status":"PERMISSION_DENIED","details":[{"@type":"type.googleapis.com/google.rpc.ErrorInfo","reason":"USER_PROJECT_DENIED","domain":"googleapis.com","metadata":{"consoleUrl":"https://console.developers.google.com/iam-admin/iam?project=neurowmsx-76a8b","service":"cloudresourcemanager.googleapis.com","containerInfo":"neurowmsx-76a8b","consumer":"projects/neurowmsx-76a8b"}},{"@type":"type.googleapis.com/google.rpc.LocalizedMessage","locale":"en-US","message":"Caller does not have required permission to use project neurowmsx-76a8b. Grant the caller the roles/serviceusage.serviceUsageConsumer role, or a custom role with the serviceusage.services.use permission, by visiting https://console.developers.google.com/iam-admin/iam?project=neurowmsx-76a8b and then retry. Propagation of the new permission may take a few minutes."},{"@type":"type.googleapis.com/google.rpc.Help","links":[{"description":"Google developer console IAM admin","url":"https://console.developers.google.com/iam-admin/iam?project=neurowmsx-76a8b"}]}]}}
+[debug] [2026-03-23T16:58:55.402Z] [iam] error while checking permissions, command may fail: Request to https://cloudresourcemanager.googleapis.com/v1/projects/neurowmsx-76a8b:testIamPermissions had HTTP Error: 403, Caller does not have required permission to use project neurowmsx-76a8b. Grant the caller the roles/serviceusage.serviceUsageConsumer role, or a custom role with the serviceusage.services.use permission, by visiting https://console.developers.google.com/iam-admin/iam?project=neurowmsx-76a8b and then retry. Propagation of the new permission may take a few minutes.
+[debug] [2026-03-23T16:58:55.402Z] Checked if tokens are valid: true, expires at: 1774288674858
+[debug] [2026-03-23T16:58:55.402Z] Checked if tokens are valid: true, expires at: 1774288674858
+[debug] [2026-03-23T16:58:55.403Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/neurowmsx-76a8b [none]
+[debug] [2026-03-23T16:58:56.246Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/neurowmsx-76a8b 403
+[debug] [2026-03-23T16:58:56.246Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/neurowmsx-76a8b {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2026-03-23T16:58:56.246Z] Request to https://firebase.googleapis.com/v1beta1/projects/neurowmsx-76a8b had HTTP Error: 403, The caller does not have permission
+[debug] [2026-03-23T16:58:56.411Z] FirebaseError: Request to https://firebase.googleapis.com/v1beta1/projects/neurowmsx-76a8b had HTTP Error: 403, The caller does not have permission
+    at responseToError (/opt/homebrew/lib/node_modules/firebase-tools/lib/responseToError.js:53:12)
+    at RetryOperation._fn (/opt/homebrew/lib/node_modules/firebase-tools/lib/apiv2.js:330:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+[error] 
+[error] Error: Failed to get Firebase project neurowmsx-76a8b. Please make sure the project exists and your account has permission to access it.
