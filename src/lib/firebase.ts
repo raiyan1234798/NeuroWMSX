@@ -5,13 +5,13 @@ import { getFirestore } from "firebase/firestore";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyB9ABCz1f1O_lLP8O-jEWgGCTNd1kqXtaM",
-  authDomain: "neurowmsx-76a8b.firebaseapp.com",
-  projectId: "neurowmsx-76a8b",
-  storageBucket: "neurowmsx-76a8b.firebasestorage.app",
-  messagingSenderId: "476374380325",
-  appId: "1:476374380325:web:f838ac38811277221574cc",
-  measurementId: "G-87J69ZY9DQ"
+  apiKey: "AIzaSyC4aBg-vTWxA2_iUI_lCeQLy87tRvF9LiM",
+  authDomain: "neurowmsx-f88d3.firebaseapp.com",
+  projectId: "neurowmsx-f88d3",
+  storageBucket: "neurowmsx-f88d3.firebasestorage.app",
+  messagingSenderId: "622068384238",
+  appId: "1:622068384238:web:5e1c01e3686e5580a28eff",
+  measurementId: "G-W3RYCGLG6M"
 };
 
 // Initialize Firebase (safely handling Next.js SSR)
